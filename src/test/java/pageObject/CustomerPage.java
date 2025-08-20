@@ -1,5 +1,6 @@
 package pageObject;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -84,6 +85,7 @@ public class CustomerPage {
 		tax_txt.click();
 	}
 	public void Newsletter() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Newsletter_txt.click();
 		nop_txt.click();
 	}

@@ -11,6 +11,9 @@ import io.cucumber.junit.CucumberOptions;
     glue = {"stepDefinitions"},                    // Package name for step definitions
     plugin = { "pretty", "html:target/cucumber-reports.html" },
     monochrome = true,
+    tags= "@sanity",
+    	// tags= "@sanity or @reg",
+
     dryRun = false
 )
 public class Runner {
